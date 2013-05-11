@@ -1,0 +1,50 @@
+/* calc the primer below N with sieve of Eratosthenes methods 
+ * Exerciese 3-12:modify the program ,using bit array 
+ * to store the data */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>		/* for CHAR_BIT */
+
+#define BITMASK(b)		(1<<((b)%CHAR_BIT))
+#define BITSLOT(b)		((b)/CHAR_BIT)
+#define BITSET(a,b)		((a)[BITSLOT(b)]|=BITMASK(b))
+#define BITCLEAR(a,b)	((a)[BITSLOT(b)]&=~BITMASK(b))
+#define BITTEST(a,b)	((a)[BITSLOT(b)]&BITMASK(b))
+#define BITNSLOTS(nb)	((nb+CHAR_BIT-1)/CHAR_BIT)
+
+
+int main(int argc,char *argv[])
+{
+		char bitarray[BITNSLOTS(47)];
+
+		BITSET(bitarray,23);
+	
+
+
+
+
+
+
+/*
+		int i,j,N = atoi(argv[1]);
+		char *f = malloc(N*sizeof(char));
+
+		if(f == NULL)
+		{
+				printf("Insufficient memory\n");
+				return -1;
+		}
+		for(i = 2;i < N;i++)
+				f[i] = 1;
+		for(i = 2;i < N;i++)
+				if(f[i])
+						for(j = i;i*j < N;j++)
+								f[i*j] = 0;
+		for(i = 2;i < N;i++)
+				if(f[i])
+						printf("%4d ",i);
+		printf("\n");
+
+	*/
+}

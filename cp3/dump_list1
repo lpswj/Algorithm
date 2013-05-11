@@ -1,0 +1,14 @@
+define dump_list
+	set $_list = (link)$arg0
+	set $_last = $_list
+	while ($_list->next != $_last)
+		printf "value is %d\n",$_list->item
+		set $_list = $_list->next
+	end
+	printf "value is %d\n",$_list->item
+end
+
+document dump_list
+		This is a command to dump all elements in Linked list
+		arg0 is the head
+end

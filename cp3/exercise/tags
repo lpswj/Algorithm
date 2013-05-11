@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+findMax	list.c	/^void findMax(link t)$/;"	f
+findMax	todo.c	/^void findMax(link t)$/;"	f
+findMax	todo1.c	/^void findMax(link t)$/;"	f
+findMin	list.c	/^void findMin(link t)$/;"	f
+findMin	todo1.c	/^void findMin(link t)$/;"	f
+initList	list.c	/^link initList(N)$/;"	f
+initList	todo.c	/^link initList(int N)$/;"	f
+initList	todo1.c	/^link initList(int N)$/;"	f
+item	list.h	/^		int item;$/;"	m	struct:node
+link	list.h	/^typedef struct node* link;$/;"	t	typeref:struct:node
+main	example.c	/^main(int argc,char *argv[])$/;"	f
+main	test.c	/^main()$/;"	f
+next	list.h	/^		link next;$/;"	m	struct:node
+node	list.h	/^struct node{$/;"	s
+printList	list.c	/^void printList(link t)$/;"	f
+printList	todo.c	/^void printList(link t)$/;"	f
+printList	todo1.c	/^void printList(link t)$/;"	f
