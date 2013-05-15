@@ -1,16 +1,26 @@
 #include <stdlib.h>
 #include "Item.h"
 #include "STACK.h"
+<<<<<<< HEAD
+static Item *s;
+static int N;
+
+void STACKini(int maxN)
+=======
 
 static Item *s;
 static int N;
 
 void STACKinit(int maxN)
+>>>>>>> office
 {
 		s = malloc(maxN * sizeof(Item));
 		N = 0;
 }
 
+<<<<<<< HEAD
+int STACK
+=======
 int STACKempty()
 {
 		return N == 0;
@@ -26,3 +36,4 @@ Item STACKpop()
 		return s[--N];
 }
 
+>>>>>>> office

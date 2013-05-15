@@ -1,11 +1,29 @@
+<<<<<<< HEAD
+/* use 0 or 1 to fill with a 2d array.
+ * if the gcd of i and j is 1,a[i][j] is 1,otherwise 0.
+=======
 /* Use 0 or 1 to fill with the 2D array
  * if the gcd of i and j is 1,then a[i][j] is 1,
  * otherwise 0
+>>>>>>> office
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 
+<<<<<<< HEAD
+int **malloc2d(int i,int j)
+{
+		int k;
+		int **t = malloc(i * sizeof(int *));
+		for(i = 0;
+}
+main()
+{
+
+}
+
+=======
 int **malloc2d(int r,int c);
 int gcd(int i,int j);
 
@@ -63,3 +81,4 @@ int **malloc2d(int r,int c)
 }
 
 
+>>>>>>> office

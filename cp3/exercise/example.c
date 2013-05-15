@@ -7,6 +7,10 @@ main(int argc,char *argv[])
 		link t,x,head;
 		head = initList(N);
 		printList(head);
+<<<<<<< HEAD
+		free5node(head);
+=======
 		freeEvent(head);
+>>>>>>> office
 		printList(head);
 }

@@ -6,8 +6,15 @@
 
 char buf[Mmax];
 int M = 0;
+<<<<<<< HEAD
+
 int compare(void *i,void *j)
 {
+		//TODO
+=======
+int compare(void *i,void *j)
+{
+>>>>>>> office
 		return strcmp(*(char **)i,*(char **)j);
 }
 
@@ -20,10 +27,19 @@ main()
 				a[N] = &buf[M];
 				if(scanf("%s",a[N]) == EOF)
 						break;
+<<<<<<< HEAD
+				M += strlen(a[N]) + 1;
+=======
 				M += strlen(a[N])+1;
+>>>>>>> office
 		}
 		qsort(a,N,sizeof(char*),compare);
 		for(i = 0;i < N;i++)
 				printf("%s\n",a[i]);
+<<<<<<< HEAD
+}
+
+=======
 
 }
+>>>>>>> office

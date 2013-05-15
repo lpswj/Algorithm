@@ -5,6 +5,12 @@
 
 main(int argc,char *argv[])
 {
+<<<<<<< HEAD
+		char *a = argv[1];
+		int i,N = strlen(a);
+		STACKinit(N);
+		for(i = 0;i < N;i++)
+=======
 		//sth wrong with it !
 		char *a = "5 9 8 + 4 6 * * 7 + *";
 		int i, n = strlen(a);
@@ -12,11 +18,18 @@ main(int argc,char *argv[])
 		Item op2;
 		
 		for(i = 0;i < n;i++)
+>>>>>>> office
 		{
 				if(a[i] == '+')
 						STACKpush(STACKpop() + STACKpop());
 				if(a[i] == '*')
 						STACKpush(STACKpop() * STACKpop());
+<<<<<<< HEAD
+				if((a[i] <= '0') && (a[i] >= '9'))
+						STACKpush(0);
+				while((a[i] >= '0') && (a[i] <= '9'))
+						STACKpush(10*STACKpop() + (a[i++] - '0'));
+=======
 				if(a[i] == '-')
 				{
 						op2 = STACKpop();
@@ -34,6 +47,7 @@ main(int argc,char *argv[])
 //						STACKpush(0);
 				while((a[i] >= '0') && (a[i] <= '9'))
 						STACKpush(a[i++]-'0');
+>>>>>>> office
 		}
 		printf("%d \n",STACKpop());
 }

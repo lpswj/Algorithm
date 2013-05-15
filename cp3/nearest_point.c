@@ -4,6 +4,10 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+<<<<<<< HEAD
+#include <time.h>
+=======
+>>>>>>> office
 #include "Point.h"
 
 float randFloat()
@@ -13,6 +17,12 @@ float randFloat()
 
 int main(int argc,char *argv[])
 {
+<<<<<<< HEAD
+		clock_t start,end;
+		double time;
+		start = clock();
+=======
+>>>>>>> office
 		float d = atof(argv[2]);
 		int i,j,cnt = 0,N = atoi(argv[1]);
 
@@ -27,4 +37,10 @@ int main(int argc,char *argv[])
 						if(distance(a[i],a[j]) < d)
 								cnt++;
 		printf("%d edges shorter than %f\n",cnt,d);
+<<<<<<< HEAD
+		end = clock();
+		time = (double)(end - start)/CLOCKS_PER_SEC;
+		printf("program running time is %f\n",time);
+=======
+>>>>>>> office
 }

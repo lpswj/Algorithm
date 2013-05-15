@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#define N 100
+
+main(int argc,char *argv[])
+{
+		char *s = argv[1];
+		int count[N],i;
+
+		for(i = 0;i < N;i++)
+				count[i] = 0;
+
+		while(*s != '\0')
+		{
+				count[*s]++;
+				s++;
+		}
+
+		for(i = 0;i < N;i++)
+				if(count[i] != 0)
+						printf("%c :%d\n",(char)(i),count[i]);
+
+}

@@ -198,6 +198,45 @@ link copyList(link t)
 				p = p->next;
 		}
 		np->next = NULL;
+<<<<<<< HEAD
+
+		return nl;
+}
+
+/* reverse :reverse the list and return the head node */
+void reverse(link x)
+{
+		link t,p = x->next,r = NULL;
+		while(p != NULL)
+		{
+				t = p->next;
+				p->next = r;
+				r = p;
+				p = t;
+		}
+		//mark
+		x->next = r;
+}
+
+/* free: free the whole list */
+int freeList(link x)
+{
+		link p;
+		while(x != NULL)
+		{
+				p = x;
+				x = x->next;
+				free(p);
+		}
+}
+
+/* free5node :free the nodes whose position is divided by 5 */
+void free5node(link x)
+{
+		link p,tmp;
+		int pos = 0;
+		p = x;
+=======
 		return nl;
 }
 
@@ -220,6 +259,7 @@ void free5nodes(link t)
 		link p,tmp;
 		p = t;
 		int pos = 0;
+>>>>>>> office
 		while(p->next != NULL)
 		{
 				pos++;
@@ -228,6 +268,17 @@ void free5nodes(link t)
 						tmp = p->next;
 						p->next = p->next->next;
 						free(tmp);
+<<<<<<< HEAD
+						break;
+				}
+
+				if(p->next != NULL)
+				{
+						p = p->next;
+				}
+		}
+
+=======
 						continue;
 				}
 				p = p->next;
@@ -254,3 +305,4 @@ void freeEvent(link t)
 		}
 
 }
+>>>>>>> office

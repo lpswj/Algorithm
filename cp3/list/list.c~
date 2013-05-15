@@ -1,5 +1,8 @@
 /* the implement of list */
+<<<<<<< HEAD
+=======
 /* use freelist to manage memory recycling */
+>>>>>>> office
 #include <stdio.h>
 #include <stdlib.h>
 #include "list.h"
